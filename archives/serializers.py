@@ -24,7 +24,7 @@ class SalleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Salle
         fields = ['id', 'nom', 'code', 'batiment', 'batiment_nom', 'type_salle', 
-                  'etage', 'superficie', 'climatisee', 'description']
+                  'etage', 'description']
 
 # Serializer pour Armoire
 class ArmoireSerializer(serializers.ModelSerializer):
@@ -33,7 +33,7 @@ class ArmoireSerializer(serializers.ModelSerializer):
     class Meta:
         model = Armoire
         fields = ['id', 'code', 'type_armoire', 'salle', 'salle_nom', 
-                  'hauteur', 'largeur', 'profondeur', 'capacite_max_etageres',
+                   
                   'code_barres', 'description', 'date_installation']
 
 # Serializer pour Etagere

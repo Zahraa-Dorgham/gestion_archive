@@ -39,7 +39,7 @@ class SalleViewSet(viewsets.ModelViewSet):
     queryset = Salle.objects.all()
     serializer_class = SalleSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter]
-    filterset_fields = ['batiment', 'etage', 'climatisee']
+    filterset_fields = ['batiment', 'etage']
     search_fields = ['nom', 'code']
     permission_classes = [IsAdminOrReadOnly]
 
